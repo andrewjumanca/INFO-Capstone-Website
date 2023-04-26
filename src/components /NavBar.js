@@ -2,16 +2,15 @@ import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import '../style/NavBar.css'
 
-
 function NavBar() {
-  const [transparent, setTransparent] = useState(true);
-
+  const [transparent, setTransparent] = useState(false);
+  
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
-        setTransparent(false);
-      } else {
         setTransparent(true);
+      } else {
+        setTransparent(false);
       }
     };
 
@@ -24,7 +23,7 @@ function NavBar() {
 
   return (
     <nav className={transparent ? 'transparent' : ''}>
-      <ul>
+      <ul className={transparent ? 'transparent' : ''}>
         <li>
           <Link to="/">Home</Link>
         </li>
@@ -40,3 +39,4 @@ function NavBar() {
 }
 
 export default NavBar;
+
