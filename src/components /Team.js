@@ -47,7 +47,7 @@ function Team() {
                 <div className='name'>Ryan Carrol</div>
                 <div className='title'>Product Manager</div>
             </div></a>
-            <div className='person chris'>
+            <a href='https://www.linkedin.com/in/christopher-ku-044332163/'><div className='person chris'>
                 <div className='person-container'>
                     <div className='person-inner-container'>
                         <img className='circle' src={backdrop} alt='background'/>
@@ -57,8 +57,8 @@ function Team() {
                 <div className='divider'></div>
                 <div className='name'>Chris Ku</div>
                 <div className='title'>Developer</div>
-            </div>
-            <div className='person matt'>
+            </div></a>
+            <a href='https://www.linkedin.com/in/matthew-ramirez-b1ba0b1b7/'><div className='person matt'>
                 <div className='person-container'>
                     <div className='person-inner-container'>
                         <img className='circle' src={backdrop} alt='background'/>
@@ -68,8 +68,9 @@ function Team() {
                 <div className='divider'></div>
                 <div className='name'>Matt Ramirez</div>
                 <div className='title'>Developer</div>
-            </div>
-            <div className='person ahmed'>
+            </div></a>
+
+            <a href='https://www.linkedin.com/in/ahmed-ghaddah/'><div className='person ahmed'>
                 <div className='person-container'>
                     <div className='person-inner-container'>
                         <img className='circle' src={backdrop} alt='background'/>
@@ -79,8 +80,8 @@ function Team() {
                 <div className='divider'></div>
                 <div className='name'>Ahmed Ghaddah</div>
                 <div className='title'>Developer</div>
-            </div>
-            <div className='andrew person'>
+            </div></a>
+            <a href='https://www.linkedin.com/in/andrew-jumanca/'><div className='andrew person'>
                 <div className='person-container'>
                     <div className='person-inner-container'>
                         <img className='circle' src={backdrop} alt='background'/>
@@ -91,7 +92,7 @@ function Team() {
                 <div className='name'>Andrew Jumanca</div>
                 <div className='title'>Developer</div>
             </div>
-        </div> 
+            </a></div> 
         <div className='overview'>
             <h2 className='overview-header'>Overview</h2>
             <p className='overview-paragraph'>We are E-Telligence, a 2022-2023 capstone team from the University of Washington Informatics program, sponsored by NetPrism. NetPrism is dedicated to providing individuals and businesses with web intelligence, and we were fortunate to collaborate with them on a new feature for their upcoming web extension. Our contribution aims to enhance the user experience and provide valuable insights to users.</p>

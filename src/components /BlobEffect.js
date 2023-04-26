@@ -1,30 +1,34 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import '../style/Blob.css';
 
-import { useState } from "react";
+const BlobEffect = () => {
+  const blobRef = useRef(null);
 
-function BlobEffect() {
-  const [blobStyle, setBlobStyle] = useState({});
+  useEffect(() => {
+    const handlePointerMove = (event) => {
+      const { clientX, clientY } = event;
 
-  const handlePointerMove = (event) => {
-    const { clientX, clientY } = event;
-    setBlobStyle({
-      position: "absolute",
-      left: `${clientX}px`,
-      top: `${clientY}px`,
-      transition: "all 3s ease-in-out",
-    });
-  };
+      blobRef.current.animate(
+        {
+          left: `${clientX}px`,
+          top: `${clientY}px`,
+        },
+        { duration: 3000, fill: 'forwards' }
+      );
+    };
+
+    window.addEventListener('pointermove', handlePointerMove);
+
+    return () => {
+      window.removeEventListener('pointermove', handlePointerMove);
+    };
+  }, []);
 
   return (
     <>
-      <div
-        id="blob"
-        style={blobStyle}
-        onPointerMove={handlePointerMove}
-      ></div>
+      <div id="blob" ref={blobRef}></div>
       <div id="blur"></div>
     </>
   );
-}
-
+};
 export default BlobEffect;

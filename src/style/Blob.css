@@ -1,36 +1,31 @@
+#blob,
+#blur {
+  position: fixed;
+  z-index: -1;
+}
+
+#blob {
+  background-color: white;
+  height: 32vmax;
+  aspect-ratio: 1;
+  left: 50%;
+  top: 50%;
+  translate: (-50%, -50%);
+  border-radius: 50%;
+  background: linear-gradient(to right, aquamarine, mediumpurple);
+  animation: rotate 20s infinite;
+  opacity: 0.95;
+  
+}
+
 @keyframes rotate {
-    from {
-      rotate: 0deg;
-    }
-    
-    50% {
-      scale: 1 1.5;
-    }
-    
-    to {
-      rotate: 360deg;
-    }
+  from {
+    transform: rotate(0deg);
   }
-  
-  #blob {
-    background-color: white;
-    height: 34vmax;
-    aspect-ratio: 1;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    translate: -50% -50%;
-    border-radius: 50%;
-    background: linear-gradient(to right, aquamarine, mediumpurple);
-    animation: rotate 20s infinite;
-    opacity: 0.8;
+  50% {
+    transform: scale(1, 1.5);
   }
-  
-  #blur {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: 0;
-    backdrop-filter: blur(12vmax);
+  to {
+    transform: rotate(360deg);
   }
-  
+}

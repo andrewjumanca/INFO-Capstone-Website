@@ -13,6 +13,17 @@
   }
 }
 
+
+#blur {
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(12vmax);
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
