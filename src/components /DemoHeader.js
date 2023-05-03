@@ -50,7 +50,7 @@ function DemoHeader() {
             <h1>
             Lets work
             <span> </span>  
-            <span class="magic"></span>
+            <span className="magic"></span>
             <span className="magic">
                 <span ref={(el) => (starRefs.current[0] = el)} className="magic-star">
                     <svg viewBox="0 0 512 512">

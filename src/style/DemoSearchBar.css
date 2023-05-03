@@ -1,4 +1,18 @@
+.loader{
+  margin: 50px;
 
+}
+
+.json-data{
+  padding: 5%;
+}
+
+.lower-half{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10%;
+}
 .DemoSearchBar {
   display: flex;
   align-items: center;
