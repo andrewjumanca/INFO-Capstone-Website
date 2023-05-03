@@ -69,7 +69,7 @@ function DemoHeader() {
                 </span>
                 <span className="magic-text"> some magic </span>
             </span>
-            <span>and find your products</span>
+            <span> and find your products</span>
         </h1>
     </div>
     )}

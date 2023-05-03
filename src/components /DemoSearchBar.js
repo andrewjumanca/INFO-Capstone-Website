@@ -1,9 +1,12 @@
 import { useRef, useEffect } from 'react';
 import '../style/DemoSearchBar.css'
+import ReactJson from 'react-json-view'
 
 function DemoSearchBar(){
     const inputRef = useRef(null);
     const buttonRef = useRef(null);
+    const [jsonData, setJsonData] = React.useState(null);
+
 
     useEffect(() => {
         const button = buttonRef.current;
@@ -11,7 +14,7 @@ function DemoSearchBar(){
         const handleClick = async () => {
             const query = inputRef.current.value;
             // set input to api endpoint
-            // const response = await fetch('http://localhost:3000/api/v1?productName=' + query, {
+            // const response = await fetch('https://etelligence-crawler.herokuapp.com/?productName=' + query, {
             //   method: 'GET'
             // });
             // const data = await response.json();
@@ -46,6 +49,9 @@ function DemoSearchBar(){
                     </div>
                     <span>Send</span>
                 </button>
+            </div>
+            <div className='json-data'>
+                {jsonData && <ReactJson src={jsonData} />}
             </div>
         </div>
     );
