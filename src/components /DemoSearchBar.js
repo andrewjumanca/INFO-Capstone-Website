@@ -1,11 +1,13 @@
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import '../style/DemoSearchBar.css'
 import ReactJson from 'react-json-view'
+
+
 
 function DemoSearchBar(){
     const inputRef = useRef(null);
     const buttonRef = useRef(null);
-    const [jsonData, setJsonData] = React.useState(null);
+    const [jsonData, setJsonData] = useState(null);
 
 
     useEffect(() => {
