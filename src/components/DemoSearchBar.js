@@ -25,7 +25,12 @@ function DemoSearchBar(){
               }
             //set input to api endpoint
             const response = await fetch('https://etelligence-crawler.herokuapp.com/scrape/?searchQuery=' + query, {
-              method: 'GET'
+            // const response = await fetch('http://localhost:8000/scrape/?searchQuery=' + query, {
+              method: 'GET',
+              accept: 'application/json',
+              headers: {
+                'Access-Control-Allow-Origin': '*'
+              }
             });
             const data = await response.json();
             setJsonData(data); 
