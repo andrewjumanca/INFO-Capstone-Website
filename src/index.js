@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './style/index.css'
 import App from './pages/App.js';
 import reportWebVitals from './reportWebVitals';
-import NavBar from './components /NavBar';
+import NavBar from './components/NavBar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Documentation from './pages/Documentation';
 import LandingPage from './pages/LandingPage';

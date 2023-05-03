@@ -1,14 +1,14 @@
 import '../style/App.css';
-import AboutFront from '../components /AboutFront';
-import Team from '../components /Team'
+import AboutFront from '../components/AboutFront';
+import Team from '../components/Team'
 import {Helmet} from "react-helmet";
 import logo from '../images/logo.png'
-import Problem from '../components /Problem'
-import Solution from '../components /Solution'
-import BlobEffect from '../components /BlobEffect'
+import Problem from '../components/Problem'
+import Solution from '../components/Solution'
+import BlobEffect from '../components/BlobEffect'
 import '../style/Blob.css'
-import DemoVideo from '../components /DemoVideo';
-import DemoButton from '../components /DemoButton';
+import DemoVideo from '../components/DemoVideo';
+import DemoButton from '../components/DemoButton';
 
 function App() {
   return (

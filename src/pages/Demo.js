@@ -1,5 +1,5 @@
-import DemoHeader from '../components /DemoHeader.js'
-import DemoSearchBar from '../components /DemoSearchBar.js'
+import DemoHeader from '../components/DemoHeader.js'
+import DemoSearchBar from '../components/DemoSearchBar.js'
 
 function Demo () {
     return(
