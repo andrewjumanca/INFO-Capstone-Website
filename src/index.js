@@ -7,6 +7,7 @@ import NavBar from './components /NavBar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Documentation from './pages/Documentation';
 import LandingPage from './pages/LandingPage';
+import Demo from './pages/Demo';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,7 +16,8 @@ root.render(
         <NavBar />
         <Routes>
           <Route exact path="/" element={<LandingPage/>} />
-          <Route exact path="/documentation" element={<Documentation />} />
+          <Route exact path="/Documentation" element={<Documentation />} />
+          <Route exact path="Demo" element={<Demo/>}/>
         </Routes>
       </Router>
     </React.StrictMode>,
