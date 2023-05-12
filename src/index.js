@@ -17,7 +17,7 @@ root.render(
         <Routes>
           <Route exact path="/" element={<LandingPage/>} />
           <Route exact path="/Documentation" element={<Documentation />} />
-          <Route exact path="Demo" element={<Demo/>}/>
+          <Route exact path="/MVP" element={<Demo/>}/>
         </Routes>
       </Router>
     </React.StrictMode>,

@@ -74,3 +74,11 @@
     height: 35px;
 }
 
+
+.description {
+  text-align: justify;
+  text-align-last: center;
+  text-align: -moz-center; /* For Firefox */
+  text-align: center; /* Fallback */
+}
+

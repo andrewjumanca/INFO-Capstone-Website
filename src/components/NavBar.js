@@ -31,7 +31,7 @@ function NavBar() {
           <Link to="/Documentation">Documentation</Link>
         </li>
         <li>
-          <Link to="/Demo">Demo</Link>
+          <Link to="/MVP">MVP</Link>
         </li>
       </ul>
     </nav>

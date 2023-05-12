@@ -9,6 +9,7 @@ import BlobEffect from '../components/BlobEffect'
 import '../style/Blob.css'
 import DemoVideo from '../components/DemoVideo';
 import DemoButton from '../components/DemoButton';
+import Test from '../components/Tests'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Team/>
         <Problem/>
         <Solution/>
+        <Test/>
         <DemoVideo/>
       </div>
   );

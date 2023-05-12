@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 function DemoButton() {
   return (
-    <Link to="/Demo">
+    <Link to="/MVP">
     <button className="learn-more">
       <span className="circle" aria-hidden="true">
         <span className="icon arrow"></span>

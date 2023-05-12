@@ -4,7 +4,10 @@
 }
 
 .json-data{
-  padding: 5%;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  
 }
 
 .lower-half{

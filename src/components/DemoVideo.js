@@ -38,7 +38,7 @@ function DemoVideo() {
             <div className='demo-video-container'>
           <div className='demo-video-container-inner'>
               <ReactPlayer
-              url="https://www.youtube.com/watch?v=R7Q83rbltjw&ab_channel=ChrisGu"
+              url="https://www.youtube.com/watch?v=Z3AqbbPwU_c&t=1s&ab_channel=RyanCarroll"
               playing={false}
               />
           </div>
